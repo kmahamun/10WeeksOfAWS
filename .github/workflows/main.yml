@@ -14,7 +14,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          role-to-assume: arn:aws:iam::588617483795:role/github-oidc-challenge-role
           aws-region: us-east-1
 
       - name: List S3 buckets
